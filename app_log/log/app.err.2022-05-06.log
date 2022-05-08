@@ -1,0 +1,8 @@
+2022-05-06 19:56:22.319 ERROR[http-nio-8080-exec-2]com.alibaba.druid.pool.DruidDataSource.validationQueryCheck:809 -testWhileIdle is true, validationQuery not set
+2022-05-06 19:56:55.245 ERROR[http-nio-8080-exec-3]com.alibaba.druid.pool.DruidDataSource.validationQueryCheck:809 -testWhileIdle is true, validationQuery not set
+2022-05-06 20:00:21.063 ERROR[http-nio-8080-exec-1]com.alibaba.druid.pool.DruidDataSource.validationQueryCheck:809 -testWhileIdle is true, validationQuery not set
+2022-05-06 20:01:56.982 ERROR[http-nio-8080-exec-1]com.alibaba.druid.pool.DruidDataSource.validationQueryCheck:809 -testWhileIdle is true, validationQuery not set
+2022-05-06 20:04:19.174 ERROR[http-nio-8080-exec-1]com.alibaba.druid.pool.DruidDataSource.validationQueryCheck:809 -testWhileIdle is true, validationQuery not set
+2022-05-06 20:05:15.309 ERROR[http-nio-8080-exec-1]com.alibaba.druid.pool.DruidDataSource.validationQueryCheck:809 -testWhileIdle is true, validationQuery not set
+2022-05-06 20:05:51.972 ERROR[http-nio-8080-exec-1]com.alibaba.druid.pool.DruidDataSource.validationQueryCheck:809 -testWhileIdle is true, validationQuery not set
+2022-05-06 20:08:44.722 ERROR[http-nio-8080-exec-2]com.alibaba.druid.pool.DruidDataSource.validationQueryCheck:809 -testWhileIdle is true, validationQuery not set

@@ -1,0 +1,9 @@
+2022-05-03 13:58:39.529 WARN [AMQP Connection 180.76.160.246:5672]com.rabbitmq.client.impl.ForgivingExceptionHandler.log:115 -An unexpected connection driver error occured (Exception message: Connection reset)
+2022-05-03 13:58:39.772 INFO [Thread-8]o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext.doClose:993 -Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@8ad6665: startup date [Mon May 02 17:45:30 CST 2022]; root of context hierarchy
+2022-05-03 13:58:39.801 INFO [Thread-8]o.s.context.support.DefaultLifecycleProcessor.stop:366 -Stopping beans in phase 2147483647
+2022-05-03 13:58:39.804 INFO [Thread-8]o.s.amqp.rabbit.listener.SimpleMessageListenerContainer.doShutdown:534 -Waiting for workers to finish.
+2022-05-03 13:58:39.805 INFO [Thread-8]o.s.amqp.rabbit.listener.SimpleMessageListenerContainer.doShutdown:537 -Successfully waited for workers to finish.
+2022-05-03 13:58:39.805 INFO [Thread-8]o.s.context.support.DefaultLifecycleProcessor.stop:366 -Stopping beans in phase 0
+2022-05-03 13:58:39.836 INFO [Thread-8]o.s.amqp.rabbit.listener.SimpleMessageListenerContainer.shutdown:1089 -Shutdown ignored - container is not active already
+2022-05-03 13:58:39.840 INFO [Thread-8]o.s.jmx.export.annotation.AnnotationMBeanExporter.destroy:451 -Unregistering JMX-exposed beans on shutdown
+2022-05-03 13:58:39.842 INFO [Thread-8]o.s.jmx.export.annotation.AnnotationMBeanExporter.unregisterBeans:183 -Unregistering JMX-exposed beans

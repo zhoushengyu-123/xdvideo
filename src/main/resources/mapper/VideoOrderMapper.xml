@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="net.xdclass.xdvideo.mapper.VideoOrderMapper">
+    <resultMap id="baseMap1" type="VideoOrder">
+        <id column="id" property="id"/>
+        <result column="openid" property="openid"/>
+        <association property="video" javaType="Video"> <!-- 从表的属性和字段的映射关系-->
+        </association>
+    </resultMap>
+    <select id="findAll"
+            resultMap="baseMap1">
+
+
+ SELECT t1.id, t1.openid ,t2.title FROM video_order t1  LEFT JOIN video t2
+  ON  t1.video_id=t2.id </select>
+
+    <resultMap id="baseMap2" type="VideoOrder">
+        <id column="id" property="id"/>
+        <result column="openid" property="openid"/>
+        <association property="video" javaType="Video" column="video_id" select="queryDeptById">
+            <id column="id" property="id"/>
+        </association>
+    </resultMap>
+    <select id="queryDeptById" parameterType="int" resultType="video">
+             SELECT * FROM video where id = #{video_id} </select>
+    <select id="queryEmp" resultMap="baseMap2"> SELECT *FROM video_order </select>
+
+
+
+</mapper>

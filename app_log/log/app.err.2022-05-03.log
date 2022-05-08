@@ -1,0 +1,1 @@
+2022-05-03 13:58:39.569 ERROR[AMQP Connection 180.76.160.246:5672]o.s.amqp.rabbit.connection.CachingConnectionFactory.log:1302 -Channel shutdown: connection error

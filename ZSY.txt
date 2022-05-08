@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xml>
+<appid>wxlp63n2ymx96184si</appid>
+<body>SpringBoot+Maven整合Websocket课程11111</body>
+<mch_id>8323128841</mch_id>
+<nonce_str>04cbe03557c94b07924d685641bb7ef4</nonce_str>
+<notify_url>16web.tunnel.qydev.com/api/v1/wechat/order/callback</notify_url>
+<out_trade_no>6165ab81b7b54a3cad6f749071404da6</out_trade_no>
+<sign>119627D5554AB78FBE8513F7634A23CC</sign>
+<spbill_create_ip>0:0:0:0:0:0:0:1</spbill_create_ip>
+<total_fee>1000</total_fee>
+<trade_type>NATIVE</trade_type>
+</xml>

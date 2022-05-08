@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+    <!-- 注册目标类 -->
+    <bean class="net.xdclass.xdvideo.service.impl.SomeServiceImpl" id="someService"></bean>
+    <!-- 注册通知类 -->
+    <bean class="net.xdclass.xdvideo.service.MyMethodBeforeAdvice" id="beforeAdvice"></bean>
+    <!-- 创建对应的代理类 -->
+    <bean class="org.springframework.aop.framework.ProxyFactoryBean" id="proxyFactoryBean">
+        <!-- 指定目标对象 -->
+        <property name="target" ref="someService"/>
+        <!-- 指定目标对象实现的所有接口 -->
+        <property name="interfaces" value="net.xdclass.xdvideo.service.SomeService"/>
+        <!-- 指定切面 将通知和切入点关联 -->
+        <property name="interceptorNames">
+            <list>
+                <value>beforeAdvice</value>
+            </list>
+        </property>
+    </bean>
+</beans>
