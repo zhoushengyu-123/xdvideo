@@ -15,5 +15,6 @@ public class Receiver {
     public void process(String msg) {
         // 处理消息
         System.out.println("recevier: " + msg);//sssss
+        //zhoushengyu
     }
 }
