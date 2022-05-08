@@ -16,5 +16,6 @@ public class Receiver {
         // 处理消息
         System.out.println("recevier: " + msg);//sssss
         //zhoushengyu
+        //地方角度看
     }
 }
