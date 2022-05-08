@@ -14,6 +14,6 @@ public class Receiver {
     @RabbitListener(queues = {"${mq.config.queue.info}"})
     public void process(String msg) {
         // 处理消息
-        System.out.println("recevier: " + msg);
+        System.out.println("recevier: " + msg);//sssss
     }
 }
